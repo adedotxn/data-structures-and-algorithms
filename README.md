@@ -1,1 +1,1 @@
-# data-structures-and-algorithms notes from FreeCodeCamp Youtube Course
+# data-structures-and-algorithms notes from freeCodeCamp youtube course
