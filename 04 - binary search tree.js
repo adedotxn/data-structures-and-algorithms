@@ -17,16 +17,16 @@ class BinarySearchTree {
     //it basically adds a node to a tree recursively starting from the root node till it meets the conditions necessary/appropriate to add data
     add(data) {
         const node = this.root; //reference to the root node
-        if(node == null) {
+        if(node == null) { //if na the first node, the root will be null so we gats create a new node
             this.root = new Node(data)
             return;
         } else {
             const searchTree = function(node) {
                 if(data  < node.data) { //remember .data, .left, .right are part of the properties of our Node class on top
-                    if(node.left ===  null ) {
+                    if(node.left ===  null ) { //if the left node is null,we add (data) to the node then
                         node.left = new Node(data)
                         return
-                    } else if (node.left !== null) {
+                    } else if (node.left !== null) { //if it's not null, we go again till it's either null and we've assigned enough values or the (data) input is >
                         return searchTree(node.left) //this is a recursive function, as it sets the function, goes back up and run it again
                     }
                 } else if( data > node.data) {
@@ -50,7 +50,8 @@ class BinarySearchTree {
 
         //if the left node isn't null, it keeps going till the next left node is null,
         // then it stops at the current node that has it's next node to be null (doesn't go to the null node o)
-        // then assigns it as our current node and return the data
+        // then it stays on the current one that has it's next node to  be null
+        // assigns it as our current node and return it's data (the number/whatever is in the node)
         //it's going to return the minimum data because the left node is always smaller than it's parent node
         while(current.left !== null) {
             current = current.left
@@ -93,7 +94,7 @@ class BinarySearchTree {
         while(current) {
             //loop keeps running till data == current node's data das why it's first
             //so if it's not equal, conditions run, search goes in left/right direction relative to the data we're looking for
-            //current is reset and the function below chavks again
+            //current is reset and the function below checks again till data === curremt.data
             if(data === current.data) {
                 return true; //found it!
             } 
@@ -158,6 +159,7 @@ class BinarySearchTree {
         return(this.findMinHeight() >= this.findMaxHeight() - 1)
     }
 
+    //dist from the root node to the first leaf node
     findMinHeight(node = this.root) {
         if(node == null) {
             return -1
@@ -172,7 +174,7 @@ class BinarySearchTree {
             return right + 1
         }
     }
-
+    //dist from the root node to the most bottom node
     findMaxHeight(node = this.root) {
         if(node == null) {
             return -1
@@ -188,6 +190,7 @@ class BinarySearchTree {
         }
     }
 
+    //left most node to the right most node (we know the lower number is always on the left of a node)
     inOrder() {
         if(this.root == null) {
             return null
@@ -201,12 +204,8 @@ class BinarySearchTree {
             traverseInOrder(this.root); 
             return result;
         }
-        //basically calls traverseInOrder with root of this node
-        //gets the left node from the root it inputed earlier
-        // then pushes the data of the left node into the array ..(the data is the child of the node)
-        //then gets the right node after ????????????????????????????? IDKKKK (this is doing my head in, i'm hungry)
-        
     }
+    
     preOrder() {
         if(this.root == null) {
             return null

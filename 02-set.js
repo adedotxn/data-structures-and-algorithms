@@ -106,7 +106,7 @@ setB.add("b")
 setB.add("c")
 
 console.log("Is Set B a subset of Set A? :", setB.subset(setA)) //should return true
-console.log("Intersection btwn both sets", setB.intersection(setA)) //will return the new set with methods but we need values so...look below
+// console.log("Intersection btwn both sets", setB.intersection(setA)) //will return the new set with methods but we need values so...look below
 console.log("Intersection btwn setB and setA", setB.intersection(setA).values()) //should return ['a', 'b', 'c' ]
 console.log("Difference btwn setA and setB", setA.difference(setB).values()) //should return ['d', 'e']
 
