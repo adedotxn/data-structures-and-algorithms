@@ -11,20 +11,21 @@ function hideEmail(email, hideFull = false) {
     if(!email.includes("@")) return console.log("input proper mail")
 
     const beforeAtSign = email.substring(0, email.indexOf("@"))
-    const middle =  beforeAtSign.substring(1, beforeAtSign.indexOf(beforeAtSign[beforeAtSign.length - 1]))
+    const middleOfName =  beforeAtSign.substring(1, beforeAtSign.indexOf(beforeAtSign[beforeAtSign.length - 1]))
+    const _hiddenEmail  = email.replace(middleOfName, "*".repeat(middleOfName.length))
+
     if (!hideFull) {
-        const hiddenEmail  = email.replace(middle, "*".repeat(middle.length))
+        const hiddenEmail = _hiddenEmail
         return hiddenEmail
     } else {
-        const _hiddenMailName  = email.replace(middle, "*".repeat(middle.length))
         const _domain = email.substring(email.indexOf("@")+1, email.indexOf("."))
 
-        const hiddenEmail  = _hiddenMailName.replace(_domain, "*".repeat(_domain.length))
+        const hiddenEmail  = _hiddenEmail.replace(_domain, "*".repeat(_domain.length))
         return hiddenEmail
     }
 }
-console.log(hideEmail("phade075@gmail.com"))
-console.log(hideEmail("phyf3script@gmail.com", true))
+console.log(hideEmail("phyf3script@gmail.com"))
+console.log(hideEmail("phade075@gmail.com", true))
 
 
 
