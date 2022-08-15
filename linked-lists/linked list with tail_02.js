@@ -107,6 +107,8 @@ class LinkedList {
     }
 }
 
+/* UNCOMMENT TO RUN EXAMPLES
+
 const list = new LinkedList();
 console.log('List is empty?', list.isEmpty())
 console.log('List size', list.getSize())
@@ -134,5 +136,8 @@ console.log("\n\tRemove from Emd")
 list.removeFromEnd()
 list.log() //Expected output: 'List :4 2 10 8 '
 
+*/
 
 
+
+module.exports = LinkedList;
