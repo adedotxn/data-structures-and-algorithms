@@ -276,7 +276,7 @@ bst.add(10)
 
 console.log("Min of bst", bst.findMin())
 console.log("Max of bst", bst.findMax())
-console.log("is 4 in the tree at all?",bst.isPresent(4))
+console.log("is 5 in the tree at all?",bst.isPresent(5))
 
 
 
@@ -303,29 +303,29 @@ const bstTH = new BinarySearchTree()
 
 
 
-bstTH.add(9)
-bstTH.add(4)
-bstTH.add(17)
-bstTH.add(3)
-bstTH.add(6)
-bstTH.add(22)
-bstTH.add(5)
-bstTH.add(7)
-bstTH.add(20)
-console.log("\n", "min height", bstTH.findMinHeight())
-console.log("max height", bstTH.findMaxHeight())
-console.log("balanced?", bstTH.isBalanced())
+// bstTH.add(9)
+// bstTH.add(4)
+// bstTH.add(17)
+// bstTH.add(3)
+// bstTH.add(6)
+// bstTH.add(22)
+// bstTH.add(5)
+// bstTH.add(7)
+// bstTH.add(20)
+// console.log("\n", "min height", bstTH.findMinHeight())
+// console.log("max height", bstTH.findMaxHeight())
+// console.log("balanced?", bstTH.isBalanced())
 
-bstTH.add(10) //greater than root(9) so it goes to the right, less tham 17 so it goes to 17's left
-console.log("new min height", bstTH.findMinHeight())
-console.log("new max height", bstTH.findMaxHeight())
-console.log("balanced this time?", bstTH.isBalanced())
+// bstTH.add(10) //greater than root(9) so it goes to the right, less tham 17 so it goes to 17's left
+// console.log("new min height", bstTH.findMinHeight())
+// console.log("new max height", bstTH.findMaxHeight())
+// console.log("balanced this time?", bstTH.isBalanced())
 
-console.log("inOrder", bstTH.inOrder())
-console.log("preOrder", bstTH.preOrder())
-console.log("postOrder", bstTH.postOrder())
+// console.log("inOrder", bstTH.inOrder())
+// console.log("preOrder", bstTH.preOrder())
+// console.log("postOrder", bstTH.postOrder())
 
-console.log("levelOrder", bstTH.levelOrder())
+// console.log("levelOrder", bstTH.levelOrder())
 
 
 
