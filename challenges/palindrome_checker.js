@@ -16,10 +16,10 @@ function ArrayStack(word) {
     }
 
     if(reverseWord === word) {
-        console.log(`Reverse of ${word} is ${reverseWord}`)
+        console.log(`Reverse of the word "${word}" is "${reverseWord}" so :`)
         console.log(word, "is a palindrome")
     } else {
-        console.log(`Reverse of ${word} is ${reverseWord}`)
+        console.log(`\nReverse of the word "${word}" is "${reverseWord}" so :`)
         console.log(word, "is not a palindrome")
     }
 
