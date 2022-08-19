@@ -19,7 +19,7 @@ function PriorityQueue() {
                 //element[1] is the second value in the element array we pass in and that's how we set priority
                 //collection[i][1] loops through all the collcetion values for their priority value at index 1
                 //compares both and places them in order of priority
-                    console.log("ifff", element[1], collection[i][1])
+                    // console.log("ifff", element[1], collection[i][1])
                     collection.splice(i, 0, element)
                     added = true;
                     break;
