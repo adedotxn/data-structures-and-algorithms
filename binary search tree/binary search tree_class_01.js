@@ -206,7 +206,7 @@ console.log(`is "50" in the binary tree? ${bst.searchWithLoop(50)}`) //Expected 
 
 */
 
-/*
+
     // DEPTH FIRST SEARCH
 console.log("\n Depth First Search")
 console.log("\t PreOrder")
@@ -221,8 +221,8 @@ bst.postOrder(bst.root)
     // BREADTH FIRST SEARCH
 console.log("\t levelOrder")
 bst.levelOrder(bst.root)
-*/
 
+/*
     // MIN & MAX
 console.log("\n Min & Max")
 console.log(`Min value of the tree is ${bst.min(bst.root)}`)
@@ -236,6 +236,7 @@ bst.levelOrder(bst.root)
 bst.delete(toDelete)
 console.log(`\n\t Removed ${toDelete}`)
 bst.levelOrder(bst.root)
+*/
 
 
 
