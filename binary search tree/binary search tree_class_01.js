@@ -189,6 +189,10 @@ bst.insert(3)
 bst.insert(7)
 bst.insert(17)
 bst.insert(11)
+bst.insert(2)
+bst.insert(4)
+bst.insert(6)
+bst.insert(9)
 
 console.log(`Is the BST still empty? ${bst.isEmpty()}`) //Expected ouput : false
 
