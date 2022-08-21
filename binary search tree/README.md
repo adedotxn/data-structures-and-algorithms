@@ -67,15 +67,12 @@ A binary search tree is a binary tree that maintains that
 
 **Depth First Search**
 
-![IMG_20220819_155606.png](Tree%205d0f46cc36e941e6a4c2eae95456622d/IMG_20220819_155606.png)
 
 - **In-Order Traversal** — Search begins at the left most node to the right most node. It basically sorts the binary tree.
 
-![IMG_20220819_155525.png](Tree%205d0f46cc36e941e6a4c2eae95456622d/IMG_20220819_155525.png)
 
 - **Pre-Order Traversal** — It's basically going to explore the root node/each parent node before it's children nodes/leaf node(s) ..basically focuses on the root node first and then it's children then moves the next root node.
 
-![IMG_20220819_155625.png](Tree%205d0f46cc36e941e6a4c2eae95456622d/IMG_20220819_155625.png)
 
 - **Post-Order Traversal** — basically explores the leaf/children nodes before the each parent node starting from the left side of the root node and ending with the root node.
 
@@ -83,7 +80,6 @@ A binary search tree is a binary tree that maintains that
 
 - **Level-Order Traversal —** explores a level of the tree first before moving to the next starting from the root …so it essentially moves horizontally from up-to-down the tree.
 
-![IMG_20220819_155406.png](Tree%205d0f46cc36e941e6a4c2eae95456622d/IMG_20220819_155406.png)
 
 ---
 
